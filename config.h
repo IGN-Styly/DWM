@@ -15,7 +15,7 @@ static int swallowfloating    = 0;        /* 1 means swallow floating windows by
 static int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FiraCode-Regular:size=12", "fontawesome:size=12", "NotoColorEmoji:size=12" };
+static const char *fonts[]          = { "JetBrainsMono Nerd Font Mono:size=13", "fontawesome:size=13", "NotoColorEmoji:size=13" };
 static char normbgcolor[]           = "#11111B";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#b4befe";
@@ -152,7 +152,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_equal,	spawn,		SHCMD("pamixer --allow-boost -i 5; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY|ShiftMask,		XK_equal,	spawn,		SHCMD("pamixer --allow-boost -i 15; kill -44 $(pidof dwmblocks)") },
 	{ MODKEY,			XK_BackSpace,	spawn,		SHCMD("pkill dwm") },
-  { MODKEY,     XK_c, spawn,  SHCMD("rofi -theme solarized -show calc -modi calc -no-show-match -no-sort")},
+  { MODKEY,     XK_c, spawn,  SHCMD("rofi -theme solarized -show calc -modi calc -no-sort")},
 	{ MODKEY|ShiftMask,		XK_BackSpace,	spawn,		SHCMD("sysact") },
   { MODKEY|ShiftMask,     XK_F1, spawn,         SHCMD("/home/styly/.local/bin/powermenu")},
   { MODKEY|ShiftMask,               XK_l, spawn,          SHCMD("slock")},
